@@ -1,7 +1,9 @@
-\# Ambiente Virtual
+# Ambiente Virtual
 .venv/ 
 env/ 
 # Cache do Python 
-\_\_pycache\_\_/ \*.pyc 
+__pycache__/ 
+*.pyc 
+
 # Cache de Testes (PyTest) 
 .pytest\_cache/
