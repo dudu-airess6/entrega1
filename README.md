@@ -1,11 +1,11 @@
 # Projeto Integrador - Segurança da Informação (Entrega 1)
 
-## 📌 Visão Geral
+## Visão Geral
 Este repositório contém a implementação da **Entrega 1** do Projeto Integrador de Segurança da Informação (Universidade Tiradentes). O objetivo principal é garantir o **sigilo**, a **integridade** e a **autenticidade** no tráfego de mensagens sensíveis através de um mecanismo de **Cifragem Híbrida**.
 
 ---
 
-## 🛠️ Arquitetura Criptográfica
+## Arquitetura Criptográfica
 
 A solução utiliza uma abordagem híbrida combinando criptografia simétrica de alta performance e criptografia assimétrica segura:
 
@@ -17,7 +17,7 @@ A solução utiliza uma abordagem híbrida combinando criptografia simétrica de
 
 ---
 
-## 🔒 Fundamentação Teórica & Padrões da Indústria
+## Fundamentação Teórica & Padrões da Indústria
 
 ### Confidencialidade vs. Autenticidade/Integridade
 - **Confidencialidade (Sigilo):** Garante que apenas o detentor da chave privada RSA correspondente consiga recuperar a chave AES e decifrar a mensagem original.
@@ -33,7 +33,7 @@ Para evolução da infraestrutura de chaves públicas em ambientes de produção
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```text
 projeto-integrador-e1/
@@ -47,7 +47,7 @@ projeto-integrador-e1/
 
 ---
 
-## 🚀 Instalação e Execução
+## Instalação e Execução
 
 ### 1. Pré-requisitos
 - Python 3.10 ou superior.
@@ -78,7 +78,7 @@ python main.py
 
 ---
 
-## 🧪 Execução dos Testes Automatizados
+## Execução dos Testes Automatizados
 
 A suíte de testes em `test_crypto.py` cobre casos de sucesso e cenários reais de ataques por adulteração (*tampering*):
 
@@ -98,6 +98,6 @@ pytest test_crypto.py -v
 
 ---
 
-## ⚠️ Análise de Riscos, Limitações e Próximos Passos
+## Análise de Riscos, Limitações e Próximos Passos
 - **Gestão de Chaves:** Atualmente, as chaves são geradas em memória para fins demonstrativos. Em ambiente de produção, as chaves privadas devem ser armazenadas em cofres de senhas/chaves seguros (ex: AWS KMS, HashiCorp Vault ou HSM).
 - **Próximas Entregas:** Integração de hashes criptográficos (SHA-256/SHA-512) e autenticação de usuários via assinatura digital.
